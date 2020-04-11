@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>FORMULÁRIO</title>
+</head>
+<body>
+    <main>
+        <div>
+            <label id="caixa">
+                <h1 id="title">FORMULÁRIO</h1>
+                <p id="description">Obrigado por nos ajudar a entende-lo melhor</p>
+                <form id="survey-form" >
+                    <label id="name-label">
+                        <p id="p1">Nome</p>
+                        <input type="text" placeholder="Insira seu nome" id="name" required>
+                    </label>
+                    <label id="email-label">
+                        <p id="p1">E-mail</p>
+                        <input type="email" placeholder="Insira seu e-mail" id="email" required>
+                    </label>
+                    <label id="nunber-label">
+                        <p id="p1">Idade</p>
+                        <input type="number" placeholder="Insira sua idade" id="number" min="18" max="99" required>
+                    </label>
+                    <p id="p2">Qual das opções melhor descreve sua categoria?</p>
+                    <select name="seletor" id="seleção">
+                        <option value="0" id="dropdown">selecione uma opção</option>
+                        <option value="1">Estudante</option>
+                        <option value="2">Trabalha em tempo integral</option>
+                        <option value="3">Estuda em tempo integral</option>
+                        <option value="4">Prefere não informar</option>
+                        <option value="5">Outro</option>
+                    </select>
+                    <p id="p2">Recomendaria nosso site para um amigo?</p>
+                    <input type="radio" id="radio">
+                    <label for="comCerteza">Com Certeza</label><br>
+                    <input type="radio"id="radio">
+                    <label for="melhorNão">Melhor não</label><br>
+                    <input type="radio"id="radio">
+                    <label for="nãoTenhoCerteza">Não tenho certeza</label>
+
+                    <p id="p2">Qual é a sua área favorita do nosso site?</p>
+                    <select name="seletor" id="seleção">
+                        <option value="0">selecione uma opção</option>
+                        <option value="1">Desafios</option>
+                        <option value="2">Códigos</option>
+                        <option value="3">Fórum</option>
+                        <option value="4">Prefere não informar</option>
+                        <option value="5">Outro</option>
+                    </select>
+                    <p id="p2">O quê você gostaria de aprender?</p>
+                    <input type="checkbox" name="checagem" id="checagem">
+                    <label for="frontend">Front-end</label><br>
+                    <input type="checkbox" name="checagem" id="checagem"> 
+                    <label for="backend">Back-end</label><br>
+                    <input type="checkbox" name="checagem" id="checagem">
+                    <label for="fullstack">Fullstack</label>
+                    <textarea name="" id="areaTexto" cols="30" rows="10"></textarea>
+                </label>
+            </form>
+            <div id="botao">
+                <button id="submit">Enviar</button>
+            </div>
+        </div>    
+    </main>
+    <footer>
+        <p>By RC development®</p>
+    </footer>
+</body>
+</html>
